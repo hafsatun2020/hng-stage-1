@@ -55,7 +55,8 @@ setInterval(getTime, 1000)
 
 function getTime(){
     const time = new Date
-     timeEl.innerHTML =  hours + `:` + time.getUTCMinutes() + `:` + time.getSeconds() + `:` + time.getUTCMilliseconds() +  AMPM
+     timeEl.innerHTML =  time.getMilliseconds()
+     document.getElementById('clock').innerHTML = hours + `:` + time.getUTCMinutes() + `:` + time.getSeconds() + `:` + time.getUTCMilliseconds() +  AMPM
 
 }
 
