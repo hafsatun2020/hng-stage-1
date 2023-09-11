@@ -51,7 +51,7 @@ if(hours === 12){
     hours = hours%12
 }
 const clockEl= document.getElementById('clock')
-setInterval(getTime, 1000)
+setInterval(getTime, 100)
 
 function getTime(){
     const time = new Date
