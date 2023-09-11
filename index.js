@@ -50,13 +50,13 @@ if(hours === 12){
 }else{
     hours = hours%12
 }
-
+const clockEl= document.getElementById('clock')
 setInterval(getTime, 1000)
 
 function getTime(){
     const time = new Date
-     timeEl.innerHTML =  time.getMilliseconds()
-     document.getElementById('clock').innerHTML = hours + `:` + time.getUTCMinutes() + `:` + time.getSeconds() + `:` + time.getUTCMilliseconds() +  AMPM
+     timeEl.innerHTML =  time.getTime()
+     clockEl.innerHTML = hours + `:` + time.getUTCMinutes() + `:` + time.getSeconds() + `:` + time.getUTCMilliseconds() +  AMPM
 
 }
 
